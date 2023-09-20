@@ -10,7 +10,6 @@ function Header() {
         <NavButton name="Contact" dir="localhost:3000"/>
       </nav>
     </div>
-
   )
 }
 

@@ -2,8 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @font-face {
-  font-family: 'sofia-sans';
-  src: url('typefaces/Sofia_Sans/static/SofiaSans-Thin.ttf') format('ttf'), 
+  font-family: 'Sofia Sans';
+  src: url('../public/assets/Sofia_Sans/static/SofiaSans-Thin.ttf'), 
+}
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../public/assets/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Thin.ttf'), 
 }
 
 body {
@@ -24,3 +28,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
