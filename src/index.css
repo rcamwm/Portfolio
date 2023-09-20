@@ -1,6 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@font-face {
+  font-family: 'sofia-sans';
+  src: url('typefaces/Sofia_Sans/static/SofiaSans-Thin.ttf') format('ttf'), 
+}
 
 body {
   margin: 0;
