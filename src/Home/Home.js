@@ -26,27 +26,27 @@ function Home() {
   }
 
   return (
-    <div className="w-screen flex flex-col border border-transparent bg-black bg-opacity-60">
+    <div className="w-auto rounded-lg relative mt-16 mb-96 flex flex-col border border-transparent bg-black bg-opacity-60">
 
       <div 
         className={`
           text-left text-white font-sofia-sans tracking-tighter
-          text-xl p-4 -mb-10
-          md:text-2xl
-          lg:text-4xl lg:-mb-9
-          xl:text-6xl xl:p-3 xl:-mb-8
-          2xl:text-8xl
+          text-2xl p-4 -mb-10
+          md:text-4xl
+          lg:text-6xl lg:-mb-9
+          xl:text-8xl xl:p-3 xl:-mb-8
+          2xl:text-10xl
         `}
       >{name}</div>
 
       <div 
         className={`
           text-left text-job-text font-jetbrains 
-          text-md p-4
-          md:text-lg
-          lg:text-xl
-          xl:text-2xl
-          2xl:text-4xl
+          text-lg p-4
+          md:text-xl
+          lg:text-2xl
+          xl:text-4xl
+          2xl:text-6xl
         `}
       >{title}</div>
 
@@ -54,7 +54,7 @@ function Home() {
         dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br>') }}
         className={`
           text-left text-body-text font-roboto max-w-screen-lg
-          text-sm p-4
+          text-sm p-4 mb-5
           md:text-md
           lg:text-lg
           xl:text-xl
@@ -62,8 +62,7 @@ function Home() {
         `}
       />
 
-      <div class="pt-5 inline-flex">
-        <ExtLink
+      <ExtLink
           length={24}
           color="#dfdfdf"
           iconPath={links.resume.iconPath}
@@ -86,7 +85,7 @@ function Home() {
           name={links.linkedin.name}
           link={links.linkedin.url}
         />
-      </div>
+      
     </div>
   )
 }

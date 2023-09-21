@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         'body-text': "#AEAEAE",
-        'job-text': "#DFDFDF"
+        'job-text': "#DFDFDF",
+        'header-bg': "#7e6282"
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

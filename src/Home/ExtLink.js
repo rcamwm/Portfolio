@@ -9,7 +9,7 @@ function ExtLink(props) {
       rel="noreferrer" 
       className={`
         inline-flex text-left text-job-text font-jetbrains 
-        text-sm pl-3 pb-3 mr-2
+        text-sm pl-4 pb-3 mr-2
     `}>
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
