@@ -1,16 +1,29 @@
-// import NavButton from "./NavButton";
+import React from "react";
 
 function Header() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+  
   return (
     <header className="sticky z-10 top-0 w-full bg-black">
       <nav className="flex items-center justify-center text-sm text-job-text font-jetbrains text-center">
-        <a href="localhost:3000">Home</a>
+        
+        <button onClick={() => scrollToSection('Home')}>Home</button>
         <div className="pl-4 pr-4">·</div>
-        <a href="localhost:3000">About</a>
+
+        <button onClick={() => scrollToSection('About')}>About</button>
         <div className="pl-4 pr-4">·</div>
-        <a href="localhost:3000">Projects</a>
+
+        <button onClick={() => scrollToSection('Projects')}>Projects</button>
         <div className="pl-4 pr-4">·</div>
-        <a href="localhost:3000">Contact</a>
+
+        <button onClick={() => scrollToSection('Contact')}>Contact</button>
       </nav>
     </header>
   )

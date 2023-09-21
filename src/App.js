@@ -5,7 +5,7 @@ import About from "./About/About";
 
 function App() {
   return (
-    <div class="bg">
+    <div class="bg" id="Home">
       <Header/>
       <div className={`
         pl-0 pr-0
@@ -15,8 +15,10 @@ function App() {
         2xl:pl-4 2xl:pr-4
       `}>
         <Home/>
+        <div id="About"></div>
         <About/>
       </div>
+      
     </div>
   );
 }
