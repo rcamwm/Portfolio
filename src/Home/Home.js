@@ -26,7 +26,15 @@ function Home() {
   }
 
   return (
-    <div className="w-auto rounded-lg relative mt-16 mb-96 flex flex-col border border-transparent bg-black bg-opacity-60">
+    <div className={`
+      w-auto rounded-lg relative flex flex-col
+      border border-transparent bg-black bg-opacity-60
+      mt-4 mb-96
+      md:mt-8
+      lg:mt-16
+      xl:mt-16
+      2xl:mt-16
+    `}>
 
       <div 
         className={`
