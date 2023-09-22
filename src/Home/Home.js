@@ -1,6 +1,9 @@
 import ExtLink from "./ExtLink";
 
-function Home() {
+function Home(props) {
+  const {lrPadding} = props;
+  console.log(lrPadding)
+
   const name = "Robert Cameron McGiffert"
   const title = "Software Engineer"
   const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -26,74 +29,71 @@ function Home() {
   }
 
   return (
-    <div className={`
-      w-auto rounded-lg relative flex flex-col
-      border border-transparent bg-black bg-opacity-60
-      mt-4 mb-96
-      md:mt-8
-      lg:mt-16
-      xl:mt-16
-      2xl:mt-16
-    `}>
+    <div className={`${lrPadding}`}>
+      <div className={`
+        w-auto rounded-lg relative flex flex-col
+        border border-transparent bg-black bg-opacity-60
+        mb-96
+      `}>
+        <div 
+          className={`
+            text-left text-white font-sofia-sans tracking-tighter
+            text-2xl p-4 -mb-10
+            md:text-4xl
+            lg:text-6xl lg:-mb-9
+            xl:text-8xl xl:p-3 xl:-mb-8
+            2xl:text-10xl
+          `}
+        >{name}</div>
 
-      <div 
-        className={`
-          text-left text-white font-sofia-sans tracking-tighter
-          text-2xl p-4 -mb-10
-          md:text-4xl
-          lg:text-6xl lg:-mb-9
-          xl:text-8xl xl:p-3 xl:-mb-8
-          2xl:text-10xl
-        `}
-      >{name}</div>
+        <div 
+          className={`
+            text-left text-job-text font-jetbrains 
+            text-lg p-4
+            md:text-xl
+            lg:text-2xl
+            xl:text-4xl
+            2xl:text-6xl
+          `}
+        >{title}</div>
 
-      <div 
-        className={`
-          text-left text-job-text font-jetbrains 
-          text-lg p-4
-          md:text-xl
-          lg:text-2xl
-          xl:text-4xl
-          2xl:text-6xl
-        `}
-      >{title}</div>
-
-      <div
-        dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br>') }}
-        className={`
-          text-left text-body-text font-roboto max-w-screen-lg
-          text-sm p-4 mb-5
-          md:text-md
-          lg:text-lg
-          xl:text-xl
-          2xl:text-2xl
-        `}
-      />
-
-      <ExtLink
-          length={24}
-          color="#dfdfdf"
-          iconPath={links.resume.iconPath}
-          name={links.resume.name}
-          link={links.resume.url}
+        <div
+          dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br>') }}
+          className={`
+            text-left text-body-text font-roboto max-w-screen-lg
+            text-sm p-4 mb-5
+            md:text-md
+            lg:text-lg
+            xl:text-xl
+            2xl:text-2xl
+          `}
         />
 
         <ExtLink
-          length={24}
-          color="#dfdfdf"
-          iconPath={links.github.iconPath}
-          name={links.github.name}
-          link={links.github.url}
-        />
+            length={24}
+            color="#dfdfdf"
+            iconPath={links.resume.iconPath}
+            name={links.resume.name}
+            link={links.resume.url}
+          />
 
-        <ExtLink
-          length={24}
-          color="#dfdfdf"
-          iconPath={links.linkedin.iconPath}
-          name={links.linkedin.name}
-          link={links.linkedin.url}
-        />
-      
+          <ExtLink
+            length={24}
+            color="#dfdfdf"
+            iconPath={links.github.iconPath}
+            name={links.github.name}
+            link={links.github.url}
+          />
+
+          <ExtLink
+            length={24}
+            color="#dfdfdf"
+            iconPath={links.linkedin.iconPath}
+            name={links.linkedin.name}
+            link={links.linkedin.url}
+          />
+        
+      </div>
     </div>
   )
 }

@@ -37,7 +37,7 @@ code {
       rgba(101, 81, 104, 0.8)
     ),
     url("../public/BackgroundImage.jpeg");
-  animation: pan-image 120s linear infinite;
+  animation: pan-image 1200s linear infinite;
   background-repeat: repeat;
 }
 
@@ -52,41 +52,21 @@ code {
     background-size: 100%;
   }
   
-  20.0001% { /* -- View 2 -- */
-    background-position: 60% 85%;
-    background-size: 250%;
-  }
-  
   40% {
     background-position: 49% 81%;
     background-size: 250%;
-  }
-  
-  40.0001% { /* -- View 3 -- */
-    background-position: 80% 42%;
-    background-size: 150%;
   }
   
   60% {
     background-position: 84% 33%;
     background-size: 150%;
   }
-  
-  60.0001% { /* -- View 4 -- */
-    background-position: 0% 0%;
-    background-size: 150%;
-  }
-  
+    
   80% {
     background-position: 15% 4%;
     background-size: 150%;
   }
-  
-  80.0001% { /* -- View 5 -- */
-    background-position: 80% 10%;
-    background-size: 150%;
-  }
-  
+    
   100% {
     background-position: 72% 14%;
     background-size: 150%;
