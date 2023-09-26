@@ -2,14 +2,16 @@ import React from "react";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 function App() {
   const lrPadding = `
+    h-screen relative
     pl-0 pr-0
     md:pl-4 md:pr-4
     lg:pl-4 lg:pr-4
-    xl:pl-4 xl:pr-4
-    2xl:pl-4 2xl:pr-4
+    xl:pl-6 xl:pr-6
+    2xl:pl-8 2xl:pr-8
   `
 
   const blankSpace = `
@@ -27,10 +29,14 @@ function App() {
       <div id="Home"/>
       <div className={blankSpace}/>
       <Home lrPadding={lrPadding}/>
-
+      
       <div id="About"/>
       <div className={blankSpace}/>
       <About lrPadding={lrPadding}/>
+
+      <div id="Projects"/>
+      <div className={blankSpace}/>
+      <Projects lrPadding={lrPadding}/>
     </div>
       
   );

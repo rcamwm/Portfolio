@@ -57,6 +57,20 @@ function About(props) {
             return <li>{tech}</li>
           })}
         </div>
+
+        <div
+          className={`
+            text-left text-body-text font-roboto max-w-screen-lg
+            text-sm p-3
+            md:text-md
+            lg:text-lg
+            xl:text-xl
+            2xl:text-2xl
+          `}
+        >
+          <br/>
+        </div>
+
       </div>
     </div>
   )

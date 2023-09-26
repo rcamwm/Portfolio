@@ -33,7 +33,6 @@ function Home(props) {
       <div className={`
         w-auto rounded-lg relative flex flex-col
         border border-transparent bg-black bg-opacity-60
-        mb-96
       `}>
         <div 
           className={`
