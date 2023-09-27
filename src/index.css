@@ -84,3 +84,7 @@ code {
   }
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}

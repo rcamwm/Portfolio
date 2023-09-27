@@ -17,8 +17,7 @@ function ProjectCard(props) {
 
   const title = "Ethereum Price Prediction Model"; // placeholder
   const description = `Forecasted future NASDAQ and S&P500 prices using historic data, then trained a stacked linear regression and k-nearest neighbors model to predict future Ethereum prices given forecasted stocks.`
-  const technologies_1 = {"Python": ["scikit-learn", "pandas", "NumPy"]};
-  const technologies_2 = {"Jupyter Notebook": ["Google Colab"], "Rest API": []};
+  const technologies_1 = {"Python": ["scikit-learn", "pandas", "NumPy"], "Jupyter Notebook": ["Google Colab"]};
   const githubLink = "https://github.com";
   const liveLink = "https://eth-predictor-google-colab.herokuapp.com/";
   return (
@@ -47,10 +46,7 @@ function ProjectCard(props) {
           className={bodyTextStyling + borderStyling + " font-roboto"}
         />
 
-        <div className={"mt-2 flex flex-wrap justify-left " + borderStyling}>
-          <ItemizedList items={technologies_1} styling={bodyTextStyling + " font-jetbrains text-tech-text"}/>
-          <ItemizedList items={technologies_2} styling={bodyTextStyling + " font-jetbrains text-tech-text"}/>
-        </div>
+        <ItemizedList items={technologies_1} styling={bodyTextStyling + borderStyling + " mt-2 font-jetbrains text-tech-text"}/>
         
         <div className={"mt-2 flex flex-wrap justify-center"}>
           {githubLink === "" ? null : (
