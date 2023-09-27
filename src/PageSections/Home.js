@@ -1,9 +1,7 @@
-import ExtLink from "./ExtLink";
+import ExternalLink from "../HelperComponents/ExternalLink";
 
 function Home(props) {
   const {lrPadding} = props;
-  console.log(lrPadding)
-
   const name = "Robert Cameron McGiffert"
   const title = "Software Engineer"
   const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -68,7 +66,7 @@ function Home(props) {
           `}
         />
 
-        <ExtLink
+        <ExternalLink
             length={24}
             color="#dfdfdf"
             iconPath={links.resume.iconPath}
@@ -76,7 +74,7 @@ function Home(props) {
             link={links.resume.url}
           />
 
-          <ExtLink
+          <ExternalLink
             length={24}
             color="#dfdfdf"
             iconPath={links.github.iconPath}
@@ -84,7 +82,7 @@ function Home(props) {
             link={links.github.url}
           />
 
-          <ExtLink
+          <ExternalLink
             length={24}
             color="#dfdfdf"
             iconPath={links.linkedin.iconPath}

@@ -10,6 +10,14 @@
   src: url('../public/assets/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Thin.ttf'), 
 }
 
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html {
   overflow: hidden;
   height: 100%;
@@ -38,7 +46,10 @@ code {
     ),
     url("../public/BackgroundImage.jpeg");
   animation: pan-image 1200s linear infinite;
+  background-size: cover;
   background-repeat: repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 @keyframes pan-image {  

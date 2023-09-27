@@ -1,4 +1,6 @@
-function ExtLink(props) {
+import Icon from "./Icon";
+
+function ExternalLink(props) {
   const {iconPath, name, link} = props;
   const color = "#dfdfdf"
 
@@ -11,19 +13,10 @@ function ExtLink(props) {
         inline-flex text-left text-job-text font-jetbrains 
         text-sm pl-4 pb-3 mr-2
     `}>
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        className="w-4 h-4 mr-1"
-        viewBox={`0 0 24 24`}
-      >
-        <path 
-          fill={color} 
-          d={iconPath}
-        />
-      </svg>
+      <Icon color={color} iconPath={iconPath} sizeClass="w-4 h-4 mr-1"/>
       {name}
     </a>
   )
 }
 
-export default ExtLink;
+export default ExternalLink;

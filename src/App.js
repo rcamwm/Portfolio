@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./Header/Header";
-import Home from "./Home/Home";
-import About from "./About/About";
-import Projects from "./Projects/Projects";
+import Header from "./PageSections/Header";
+import Home from "./PageSections/Home";
+import About from "./PageSections/About";
+import Projects from "./PageSections/Projects";
+import Contact from "./PageSections/Contact";
 
 function App() {
   const lrPadding = `
@@ -23,7 +24,7 @@ function App() {
   `
 
   return (
-    <div class="bg">
+    <div className="bg">
       <Header/>
 
       <div id="Home"/>
@@ -37,6 +38,10 @@ function App() {
       <div id="Projects"/>
       <div className={blankSpace}/>
       <Projects lrPadding={lrPadding}/>
+
+      <div id="Contact"/>
+      <div className={blankSpace}/>
+      <Contact lrPadding={lrPadding}/>
     </div>
       
   );

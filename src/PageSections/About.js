@@ -1,3 +1,5 @@
+import ItemizedList from "../HelperComponents/ItemizedList";
+
 function About(props) {
   const {lrPadding} = props;
 
@@ -10,9 +12,9 @@ function About(props) {
   Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
   
   Maecenas adipiscing ante non diam sodales hendrerit:
-  `
+  `;
 
-  const technologies = ["Nullam", "Lectus ac nisi", "Sagittis vulputate"]
+  const technologies = {"Nullam": [], "Lectus ac nisi": [], "Sagittis vulputate": []};
 
   return (
     <div className={`${lrPadding}`}>
@@ -43,20 +45,14 @@ function About(props) {
           `}
         />
 
-        <div
-          className={`
-            text-left text-body-text font-roboto max-w-screen-lg
-            text-sm pl-10
-            md:text-md
-            lg:text-lg
-            xl:text-xl
-            2xl:text-2xl
-          `}
-        >
-          {technologies.map(tech => {
-            return <li>{tech}</li>
-          })}
-        </div>
+        <ItemizedList items={technologies} styling={`
+          text-left text-body-text font-roboto max-w-screen-lg
+          text-sm pl-10
+          md:text-md
+          lg:text-lg
+          xl:text-xl
+          2xl:text-2xl
+        `}/>
 
         <div
           className={`
