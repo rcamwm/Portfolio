@@ -11,7 +11,7 @@ function Header() {
   };
   
   return (
-    <header className="sticky z-10 top-0 w-full bg-black">
+    <header className="fixed z-10 top-0 w-full bg-black">
       <nav className="flex items-center justify-center text-sm text-job-text font-jetbrains text-center">
         
         <button onClick={() => scrollToSection('Home')}>Home</button>

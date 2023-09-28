@@ -1,7 +1,6 @@
 import ExternalLink from "../HelperComponents/ExternalLink";
 
 function Home(props) {
-  const {lrPadding} = props;
   const name = "Robert Cameron McGiffert"
   const title = "Software Engineer"
   const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -27,10 +26,15 @@ function Home(props) {
   }
 
   return (
-    <div className={`${lrPadding}`}>
+    <div className="relative pt-4">
       <div className={`
-        w-auto rounded-lg relative flex flex-col
-        border border-transparent bg-black bg-opacity-60
+        w-auto h-screen relative flex flex-col
+        border border-transparent bg-black bg-opacity-60 
+        p-4
+        md:p-12
+        lg:p-16
+        xl:p-20
+        2xl:p-24
       `}>
         <div 
           className={`
@@ -65,15 +69,16 @@ function Home(props) {
             2xl:text-2xl
           `}
         />
-
-        <ExternalLink
+        <div>
+          <ExternalLink
             length={24}
             color="#dfdfdf"
             iconPath={links.resume.iconPath}
             name={links.resume.name}
             link={links.resume.url}
           />
-
+        </div>
+        <div>
           <ExternalLink
             length={24}
             color="#dfdfdf"
@@ -81,7 +86,8 @@ function Home(props) {
             name={links.github.name}
             link={links.github.url}
           />
-
+        </div>
+        <div>
           <ExternalLink
             length={24}
             color="#dfdfdf"
@@ -89,7 +95,7 @@ function Home(props) {
             name={links.linkedin.name}
             link={links.linkedin.url}
           />
-        
+        </div>
       </div>
     </div>
   )

@@ -13,10 +13,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        'solid-bg': "#392b3b",
         'body-text': "#AEAEAE",
         'job-text': "#DFDFDF",
         "tech-text": "#C8C8C8",
-        'header-bg': "#7E6282",
+        'tech-bg': "#826d86",
         'card-bg': "#655168",
       },
       fontFamily: {

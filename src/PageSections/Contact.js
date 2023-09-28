@@ -1,11 +1,14 @@
 function Contact(props) {
-  const {lrPadding} = props;
-
   return (
-    <div className={`${lrPadding}`}>
+    <div className="relative">
       <div className={`
-        w-auto rounded-lg flex flex-col 
-        border border-transparent bg-black bg-opacity-60 break-after-page
+        w-auto h-screen flex flex-col 
+        border border-transparent bg-black bg-opacity-80
+        p-6
+        md:p-6
+        lg:p-8
+        xl:p-12
+        2xl:p-14
       `}>
         <div 
           className={`
