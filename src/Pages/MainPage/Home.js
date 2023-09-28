@@ -1,4 +1,4 @@
-import ExternalLink from "../HelperComponents/ExternalLink";
+import ExternalLink from "../../HelperComponents/ExternalLink";
 
 function Home(props) {
   const name = "Robert Cameron McGiffert"

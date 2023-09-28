@@ -1,4 +1,4 @@
-import ProjectCard from "../HelperComponents/ProjectCard";
+import ProjectCard from "../../HelperComponents/ProjectCard";
 
 function Projects() {  
   return (

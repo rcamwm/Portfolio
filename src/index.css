@@ -38,7 +38,15 @@ code {
     monospace;
 }
 
-.bg {
+.nav-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+}
+
+.main-bg {
   background:
     linear-gradient(
       rgba(101, 81, 104, 0.8), 
