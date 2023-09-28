@@ -42,24 +42,26 @@ function ProjectCard(props) {
 
         <TechnologyLister technologies={technologies}/>
 
-        <div className="border mt-4"/>
-
-        <div className={"mt-4 flex flex-wrap justify-center"}>
-          <a className="bg-white text-sm text-card-bg px-2 py-1 rounded-md" href="http:localhost:3000" target="_blank" rel="noreferrer">READ MORE</a>
+        <div className="mt-auto w-fill">
+          <footer className={"mt-4 text-center flex flex-wrap justify-center"}>
+            <a className="bg-white text-sm text-card-bg px-2 py-1 rounded-md" href="http:localhost:3000" target="_blank" rel="noreferrer">READ MORE</a>
+          </footer>
         </div>
+
         
-        <div className={"mt-2 flex flex-wrap justify-center"}>
+        
+        {/* <div className={"mt-2 flex flex-wrap justify-center"}>
           {githubLink === "" ? null : (
-            <a className="px-3" href={githubLink} target="_blank" rel="noreferrer">
-              <Icon color="#ffffff" iconPath={githubIcon} sizeClass="w-6 h-6"/>
+            <a className="px-3 text-xs flex font-jetbrains" href={githubLink} target="_blank" rel="noreferrer">
+              <Icon color="#ffffff" iconPath={githubIcon} sizeClass="w-4 h-4 mx-1"/>Repo
             </a>
           )}
           {liveLink === "" ? null : (
-            <a className="px-3" href={liveLink} target="_blank" rel="noreferrer">
-              <Icon color="#ffffff" iconPath={externalIcon} sizeClass="w-6 h-6"/>
+            <a className="px-3 text-xs flex font-jetbrains" href={liveLink} target="_blank" rel="noreferrer">
+              <Icon color="#ffffff" iconPath={externalIcon} sizeClass="w-4 h-4 mx-1"/>Live
             </a>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   )

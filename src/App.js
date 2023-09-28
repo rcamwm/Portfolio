@@ -1,4 +1,4 @@
-import React /*, {useState}*/ from "react";
+import React from "react";
 import Header from "./PageSections/Header";
 import Home from "./PageSections/Home";
 import About from "./PageSections/About";
