@@ -13,12 +13,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'solid-bg': "#392b3b",
         'body-text': "#AEAEAE",
         'job-text': "#DFDFDF",
-        "tech-text": "#C8C8C8",
-        'tech-bg': "#826d86",
-        'card-bg': "#655168",
+        'card-bg': "#757387",
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

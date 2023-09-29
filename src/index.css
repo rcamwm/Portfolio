@@ -49,8 +49,8 @@ code {
 .main-bg {
   background:
     linear-gradient(
-      rgba(101, 81, 104, 0.8), 
-      rgba(101, 81, 104, 0.8)
+      rgba(115, 123,	135, 0.8), 
+      rgba(115, 123,	135, 0.8)
     ),
     url("../public/BackgroundImage.jpeg");
   animation: pan-image 1200s linear infinite;
