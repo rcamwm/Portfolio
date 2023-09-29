@@ -1,33 +1,36 @@
-import React from "react";
-// import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 function Header() {
-  // const currPath = useLocation().pathname;
+  const currPath = useLocation().pathname;
 
-  const scrollToSection = (sectionId) => {
+  const jumpTo = (sectionId) => {
     const section = document.getElementById(sectionId);
-    if (section) {
+    if (currPath === "/") {
       section.scrollIntoView({
         behavior: 'smooth',
       });
+      window.history.pushState({}, "", `/#${sectionId}`); // Change URL without redirect
+    }
+    else {
+      window.location.href = `/#${sectionId}`; // Change URL with redirect
     }
   };
   
   return (
     <header className="nav-header">
       <nav className="flex items-center justify-center text-sm text-job-text font-jetbrains text-center">
-        <Link to="#Home" className="hover:scale-105" onClick={() => scrollToSection('Home')}>Home</Link>
+        
+        <button className="hover:scale-105" onClick={() => jumpTo('Home')}>Home</button>
         <div className="pl-4 pr-4">·</div>
 
-        <Link to="#About" className="hover:scale-105" onClick={() => scrollToSection('About')}>About</Link>
+        <button className="hover:scale-105" onClick={() => jumpTo('About')}>About</button>
         <div className="pl-4 pr-4">·</div>
 
-        <Link to="#Projects" className="hover:scale-105" onClick={() => scrollToSection('Projects')}>Projects</Link>
+        <button className="hover:scale-105" onClick={() => jumpTo('Projects')}>Projects</button>
         <div className="pl-4 pr-4">·</div>
 
-        <Link to="#Contact" className="hover:scale-105" onClick={() => scrollToSection('Contact')}>Contact</Link>
+        <button className="hover:scale-105" onClick={() => jumpTo('Contact')}>Contact</button>
       </nav>
     </header>
   )

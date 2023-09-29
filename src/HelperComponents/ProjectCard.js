@@ -32,6 +32,7 @@ function ProjectCard(props) {
           className={`
             border rounded-md font-roboto
             text-left text-body-text max-w-sm
+            bg-black bg-opacity-20
             text-xs p-2 mb-2
             md:text-sm
             lg:text-sm 
@@ -44,7 +45,7 @@ function ProjectCard(props) {
 
         <div className="mt-auto w-fill">
           <footer className={"mt-4 text-center flex flex-wrap justify-center"}>
-            <a className="bg-white text-sm text-card-bg px-2 py-1 rounded-md hover:scale-105" href="http:localhost:3000" target="_blank" rel="noreferrer">READ MORE</a>
+            <a className="bg-white text-sm text-card-bg px-2 py-1 rounded-md hover:scale-105" href="/test" target="_blank" rel="noreferrer">READ MORE</a>
           </footer>
         </div>
 
