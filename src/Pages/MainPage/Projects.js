@@ -30,6 +30,7 @@ function Projects() {
             technologies={["Python", "PyTorch", "OpenCV", "Jupyter Notebook", "Google Colab", "Cloud Computing", "C#", "Unity Engine"]} 
             githubLink=""
             liveLink=""
+            reportLink="/ANNimator"
           />
           <ProjectCard 
             title="Ethereum Price Prediction Model" 
@@ -37,6 +38,7 @@ function Projects() {
             technologies={["Python", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook", "Google Colab"]} 
             githubLink=""
             liveLink="https://eth-predictor-google-colab.herokuapp.com/"
+            reportLink=""
           />
           <ProjectCard 
             title="Pixlerr.io" 
@@ -44,6 +46,7 @@ function Projects() {
             technologies={["JavaScript", "Node.js", "React.js", "Express.js", "Socket.io", "MongoDB", "HTML", "CSS", "Git", "Heroku"]} 
             githubLink="https://github.com/CSC307-Group"
             liveLink="https://pixlerr-io.herokuapp.com/" 
+            reportLink=""
           /> 
           
         </div>
