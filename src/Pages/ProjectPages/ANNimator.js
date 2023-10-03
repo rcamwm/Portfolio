@@ -4,7 +4,7 @@ function ANNimator() {
   return (
     <div className="relative h-auto">
       <div className={`
-          w-auto relative flex flex-col
+          w-auto min-h-screen relative flex flex-col
           p-4
           md:p-8
           lg:p-8
@@ -13,23 +13,23 @@ function ANNimator() {
       `}>
           <div 
             className={`
-                text-center text-white font-sofia-sans tracking-tighter
-                text-4xl pt-4 
-                md:text-4xl 
-                lg:text-6xl 
-                xl:text-8xl
-                2xl:text-10xl
+              text-center text-white font-sofia-sans tracking-tighter
+              text-4xl pt-4 
+              md:text-4xl 
+              lg:text-6xl 
+              xl:text-8xl
+              2xl:text-10xl
             `}
           >ANNimator</div>
 
           <div 
             className={`
-                text-center text-job-text font-jetbrains 
-                text-md
-                md:text-lg md:mb-2
-                lg:text-xl lg:mb-2
-                xl:text-2xl xl:mb-4
-                2xl:text-4xl 2xl:mb-4
+              text-center text-job-text font-jetbrains 
+              text-md
+              md:text-lg md:mb-2
+              lg:text-xl lg:mb-2
+              xl:text-2xl xl:mb-4
+              2xl:text-4xl 2xl:mb-4
             `}
           >2023</div>
 

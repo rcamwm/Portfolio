@@ -59,13 +59,15 @@ function Contact() {
           
           <a 
             className="border p-2 mx-2 rounded-md hover:scale-105 flex" 
+            target="_blank"
+            rel="noreferrer" 
             href="https://www.linkedin.com/in/cameron-mcgiffert/"
           >
             <Icon color="#ffffff" iconPath={linkedinIcon} sizeClass="w-6 h-6 mr-2"/>LinkedIn
           </a>
         </div>
         <footer className="mt-auto text-center mb-0 text-white">
-          © Build and design by Robert Cameron McGiffert.<br/>
+          © Build and design by <a className="text-body-text hover:scale-105" href="Robert Cameron McGiffert resume.pdf">Robert Cameron McGiffert</a>.<br/>
           Loosely designed in Figma.<br/>
           Built with React.js and Tailwind CSS.
         </footer>
@@ -74,4 +76,4 @@ function Contact() {
   )
 }
   
-  export default Contact;
+export default Contact;
