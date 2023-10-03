@@ -6,7 +6,7 @@ function Header() {
 
   const jumpTo = (sectionId) => {
     const section = document.getElementById(sectionId);
-    if (currPath === "/") {
+    if (currPath === "/" && window.innerWidth >= 769) {
       section.scrollIntoView({
         behavior: 'smooth',
       });

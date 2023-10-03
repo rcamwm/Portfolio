@@ -18,7 +18,7 @@ function About(props) {
     <div className="relative">
       <div className={`
         w-auto h-screen flex flex-col 
-        border border-transparent bg-black bg-opacity-80
+        bg-black bg-opacity-80
         p-6
         md:p-6
         lg:p-8

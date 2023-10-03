@@ -29,7 +29,7 @@ function Home(props) {
     <div className="relative pt-4">
       <div className={`
         w-auto h-screen relative flex flex-col
-        border border-transparent bg-black bg-opacity-60 
+        bg-black bg-opacity-60 
         p-4
         md:p-12
         lg:p-16

@@ -15,7 +15,10 @@ module.exports = {
       colors: {
         'body-text': "#AEAEAE",
         'job-text': "#DFDFDF",
+        'project-title': "#3D3D3D",
+        'project-body': "#383838",
         'card-bg': "#757387",
+        'project-bg': "#DFE3E5",
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

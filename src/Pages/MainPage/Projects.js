@@ -2,10 +2,10 @@ import ProjectCard from "../../HelperComponents/ProjectCard";
 
 function Projects() {  
   return (
-    <div className="relative h-auto">
-      <div className={`
+    <div className="relative h-auto"> 
+      <div className={` 
         w-auto flex flex-col 
-        border border-transparent bg-black bg-opacity-60
+        bg-black bg-opacity-60
         p-6
         md:p-6
         lg:p-8
@@ -44,7 +44,8 @@ function Projects() {
             technologies={["JavaScript", "Node.js", "React.js", "Express.js", "Socket.io", "MongoDB", "HTML", "CSS", "Git", "Heroku"]} 
             githubLink="https://github.com/CSC307-Group"
             liveLink="https://pixlerr-io.herokuapp.com/" 
-          />          
+          /> 
+          
         </div>
       </div>
     </div>
