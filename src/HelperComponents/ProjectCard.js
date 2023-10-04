@@ -9,10 +9,10 @@ function ProjectCard(props) {
   const [display, setDisplay] = useState(true);
 
   useEffect(() => {
-    const filterList = techFilters.replace(/[\s.]/g, "").toLowerCase().split(";");
+    const filterList = techFilters.replace(/[\s.-]/g, "").toLowerCase().split(";");
     setDisplay(filterList.length === 1 && filterList[0] === "" ? true : filterList.every(filter => {
       return technologies.some(tech => {
-        return tech.replace(/[\s.]/g, "").toLowerCase().includes(filter);
+        return tech.replace(/[\s.-]/g, "").toLowerCase().includes(filter);
       });
     }));
   }, [techFilters, technologies])

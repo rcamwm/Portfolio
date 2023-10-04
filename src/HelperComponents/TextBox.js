@@ -9,17 +9,18 @@ function TextBox(props) {
     <div className={`
       flex w-full justify-center
       mb-4 text-xs
+      sm:text-sm
       md:mb-2 md:text-sm
       lg:mb-2 lg:text-sm 
       xl:mb-0 xl:text-md 
       2xl:mb-0 2xl:text-md 
     `}>
       <input
-        className='w-96 rounded-md p-2 font-jetbrains focus:outline-none'
+        className='bg-job-text w-96 rounded-md px-4 py-2 font-jetbrains focus:outline-none'
         type="text"
         value={text}
         onChange={onType}
-        placeholder="e.g. Python; JavaScript; C++; Java; HTML"
+        placeholder="E.g.: Python; NumPy; Jupyter; React; Unity"
       />
     </div>
   );

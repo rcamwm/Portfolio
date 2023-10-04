@@ -25,9 +25,9 @@ function Projects() {
             xl:text-4xl
             2xl:text-6xl
           `}
-        >Personal Projects</div>
+        >Projects</div>
 
-        <div className='flex justify-center text-sm text-white text-opacity-80 font-roboto mt-4 mb-1'>
+        <div className='flex justify-center text-sm text-white text-opacity-80 font-roboto mt-8 mb-1'>
           Filter projects by technologies:
         </div>
         <TextBox text={techFilters} setText={setTechFilters} />
@@ -47,7 +47,7 @@ function Projects() {
             description="I trained a polynomial regression model to forecast future NASDAQ and S&P500 prices given historic data. I then trained a stacked linear regression / k-nearest neighbors model to predict Ethereum's value given those forecasted stock prices."
             technologies={["Python", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook", "Google Colab"]} 
             githubLink=""
-            liveLink="https://eth-predictor-google-colab.herokuapp.com/"
+            liveLink="https://colab.research.google.com/drive/1ZrAy71aptI1kfU9V41mpVqy2gAOtU-dJ?usp=sharing"
             reportLink=""
             techFilters={techFilters}
           />
@@ -63,7 +63,7 @@ function Projects() {
           <ProjectCard 
             title="Personal Portfolio Website" 
             description="This very website! Designed and coded from scratch."
-            technologies={["JavaScript", "React.js", "Tailwind CSS", "HTML", "Heroku"]} 
+            technologies={["JavaScript", "React.js", "Tailwind CSS", "HTML", "Heroku", "Figma"]} 
             githubLink="https://github.com/rcamwm/Portfolio"
             liveLink="/"
             reportLink=""

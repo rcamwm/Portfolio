@@ -39,7 +39,7 @@ function Contact() {
           `}
         >
           I'd love to hear from you!<br/>
-          If you'd like to connect, feel free to contact me with any of the methods below and I'll get back to you as soon as I can!
+          Feel free to contact me with any of the methods listed below and I'll get back to you as soon as I can!
         </div>
 
         <div className="justify-center flex text-job-text font-jetbrains">

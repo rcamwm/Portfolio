@@ -1,11 +1,14 @@
+import React, { useEffect }  from "react";
 import ExternalLink from "../../HelperComponents/ExternalLink";
 
-function Home(props) {
+function Home() {
+  useEffect(() => {
+    document.title = 'Robert Cameron McGiffert';
+  }, []);
+
   const name = "Robert Cameron McGiffert"
   const title = "Software Engineer"
-  const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Nulla facilisi. Integer nec odio. Praesent libero.
-  `
+  const description = `Passionate about building cool new things and solving complex problems.`
 
   const links = {
     "github": {

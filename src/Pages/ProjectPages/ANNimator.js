@@ -1,6 +1,14 @@
+import React, { useEffect }  from "react";
 import ProjectReport from "../../HelperComponents/ProjectReport";
 
 function ANNimator() {
+  useEffect(() => {
+    document.title = 'ANNimator Report';
+    return () => {
+      document.title = "Robert Cameron McGiffert";
+    };
+  }, []);
+
   return (
     <div className="relative h-auto">
       <div className={`
