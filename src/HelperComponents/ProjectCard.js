@@ -26,7 +26,7 @@ function ProjectCard(props) {
       return (tagFilters.length === 0) ? true : tagFilters.every(tag => tags.includes(tag));
     }
 
-    setDisplay(filterCheck && tagCheck);
+    setDisplay(filterCheck() && tagCheck());
   }, [techFilters, technologies, tagFilters, tags])
 
 

@@ -34,7 +34,7 @@ function Projects() {
         </div>
         <TextBox text={techFilters} setText={setTechFilters} />
         <div className={`
-          flex justify-center text-sm text-white
+          flex justify-center text-sm font-jetbrains
           mt-2 mb-4 
           md:mb-2
           lg:mb-2
