@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ProjectCard from "../../HelperComponents/ProjectCard";
+import TagFilterButton from '../../HelperComponents/TagFilterButton';
 import TextBox from "../../HelperComponents/TextBox";
 
 function Projects() {  
   const [techFilters, setTechFilters] = useState("");
-  // const [tagFilters, setTagFilters] = useState([]);
+  const [tagFilters, setTagFilters] = useState([]);
 
   return (
     <div className="relative h-auto"> 
@@ -33,12 +34,18 @@ function Projects() {
         </div>
         <TextBox text={techFilters} setText={setTechFilters} />
         <div className={`
-          mb-4 
+          flex justify-center text-sm text-white
+          mt-2 mb-4 
           md:mb-2
           lg:mb-2
           xl:mb-0
           2xl:mb-0
-        `}></div>
+        `}>
+          <TagFilterButton tagValue="Data" tagFilters={tagFilters} setTagFilters={setTagFilters}/>
+          <TagFilterButton tagValue="Web Apps" tagFilters={tagFilters} setTagFilters={setTagFilters}/>
+          <TagFilterButton tagValue="Games" tagFilters={tagFilters} setTagFilters={setTagFilters}/>
+          <TagFilterButton tagValue="Misc" tagFilters={tagFilters} setTagFilters={setTagFilters}/>
+        </div>
 
         <div className="flex flex-wrap justify-center">
           <ProjectCard 
@@ -52,6 +59,7 @@ function Projects() {
             otherTitle="Read More"
             tags={["Data"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           />
           <ProjectCard 
             title="Ethereum Predictor" 
@@ -63,6 +71,7 @@ function Projects() {
             otherLink=""
             tags={["Data"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           />
           <ProjectCard 
             title="Openprise Dashboard Application" 
@@ -75,6 +84,7 @@ function Projects() {
             otherTitle="Openprise Website"
             tags={["Data", "Web Apps"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           /> 
           <ProjectCard 
             title="Pixlerr.io" 
@@ -86,6 +96,7 @@ function Projects() {
             otherLink=""
             tags={["Web Apps"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           /> 
           <ProjectCard 
             title="Simple Message Passing Interface" 
@@ -97,6 +108,7 @@ function Projects() {
             otherLink=""
             tags={["Misc"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           /> 
           <ProjectCard 
             title="Reminisce" 
@@ -108,6 +120,7 @@ function Projects() {
             otherLink=""
             tags={["Games"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           /> 
           <ProjectCard 
             title="Personal Portfolio" 
@@ -119,6 +132,7 @@ function Projects() {
             otherLink=""
             tags={["Web Apps"]}
             techFilters={techFilters}
+            tagFilters={tagFilters}
           />
           
         </div>
