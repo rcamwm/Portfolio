@@ -61,7 +61,7 @@ function Contact() {
             className="border p-2 mx-2 rounded-md hover:scale-105 flex" 
             target="_blank"
             rel="noreferrer" 
-            href="https://www.linkedin.com/in/cameron-mcgiffert/"
+            href="https://www.linkedin.com/in/rcamwm/"
           >
             <Icon color="#ffffff" iconPath={linkedinIcon} sizeClass="w-6 h-6 mr-2"/>LinkedIn
           </a>
