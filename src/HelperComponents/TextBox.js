@@ -6,21 +6,13 @@ function TextBox(props) {
   };
 
   return (
-    <div className={`
-      flex w-full justify-center
-      mb-4 text-xs
-      sm:text-sm
-      md:mb-2 md:text-sm
-      lg:mb-2 lg:text-sm 
-      xl:mb-0 xl:text-md 
-      2xl:mb-0 2xl:text-md 
-    `}>
+    <div className={`flex w-full justify-center text-md`}>
       <input
         className='bg-job-text w-96 rounded-md px-4 py-2 font-jetbrains focus:outline-none'
         type="text"
         value={text}
         onChange={onType}
-        placeholder="E.g.: Python; NumPy; Jupyter; React; Unity"
+        placeholder="E.g.: Python; NumPy; Jupyter; React"
       />
     </div>
   );

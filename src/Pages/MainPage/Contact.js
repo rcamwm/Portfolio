@@ -67,7 +67,7 @@ function Contact() {
           </a>
         </div>
         <footer className="mt-auto text-center mb-0 text-white">
-          © Build and design by <a className="text-body-text hover:scale-105" href="Robert Cameron McGiffert resume.pdf">Robert Cameron McGiffert</a>.<br/>
+          ©2023 Build and design by <a className="text-body-text hover:scale-105" href="Robert Cameron McGiffert resume.pdf">Robert Cameron McGiffert</a>.<br/>
           Loosely designed in Figma.<br/>
           Built with React.js and Tailwind CSS.
         </footer>
