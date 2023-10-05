@@ -6,7 +6,6 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import ANNimator from "./Pages/ANNimator";
-import Art from "./Pages/Art";
 
 function App() {
   const currPath = useLocation().pathname;
@@ -42,13 +41,6 @@ function App() {
           <div className="main-bg">
             <Header jumpTo={jumpTo}/>
             <ANNimator/>
-          </div>
-        } />
-
-        <Route path="/Art" element={
-          <div className="main-bg">
-            <Header jumpTo={jumpTo}/>
-            <Art/>
           </div>
         } />
 
