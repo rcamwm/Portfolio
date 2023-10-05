@@ -1,9 +1,8 @@
-// import TechnologyLister from "../HelperComponents/TechnologyLister";
+import TechnologyLister from "../HelperComponents/TechnologyLister";
 
 function About(props) {
   const { jumpTo } = props;
-
-  // const technologies = ["Nullam", "Lectus ac nisi", "Sagittis vulputate"];
+  const techTitleStyling = "mt-4 py-2 text-white text-left text-sm font-jetbrains flex flex-col";
 
   return (
     <div className="relative h-auto">
@@ -42,22 +41,38 @@ function About(props) {
             Hi, I'm Robert_Cameron! 
             That's a single first name with a space and no hyphen, but you can just call me Cameron. 
             I recently graduated from Cal Poly San Luis Obispo with a bachelor's in computer science, 
-            and I'll soon be starting in a new role as a software engineer in Baltimore, Maryland. 
+            and I'll soon be starting a new role as a software engineer in Baltimore, Maryland. 
           </p>
 
           <p>
             <br/>
-            In 2018, while at an unrelated job, 
-            I uncovered my passion for data and software by identifying discrepancies in employee performance and data records. 
-            By introducing an efficient metric system, leading time trials, and developing trend-spotting tools, 
-            I addressed employee underperformance and process inefficiencies. 
-            This experience drove me to return to school, 
-            eager to pursue a career focused on solving data-related challenges.
+            I never expected to love this field as much as I do. 
+            What started as an independent project at an old unrelated job turned into me apprehensively taking an introductory Python course.
+            Learning Python was somehow the first time school had ever been enjoyable.
+            I ended up taking as many computer science classes as I could, 
+            going overboard on every assignment just for the fun of it, trying to write the best programs possible.
           </p>
 
           <p>
             <br/>
-            In my free time you can find me cooking <a 
+            During both my academic and professional careers, I've gained experience in both data science and fullstack web development.
+            You can check out my <button 
+                className="text-violet-300 text-opacity-70" 
+                onClick={() => jumpTo('Projects')}
+              >projects</button> for more detail. Technologies I've worked with include:
+              <div className="">
+                <TechnologyLister title="Languages" technologies={["Python", "JavaScript", "TypeScript", "C/C++", "C#", "Java", "Groovy"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Data Science and Machine Learning" technologies={["PyTorch", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook", "Google Colab"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Web Development" technologies={["Node.js", "React.js", "Vue.js", "Express.js", "Socket.io", "Micronaut", "HTML", "CSS", "Tailwind CSS"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Databases" technologies={["MySQL", "MongoDB", "Elasticsearch"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Deployment Tools" technologies={["Docker", "Heroku", "Github Actions"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Security" technologies={["Nginx", "OAuth 2.0", "JSON Web Tokens"]} mainStyling={techTitleStyling}/>
+              </div>
+          </p>
+
+          <p>
+            <br/>
+            When I'm not working on projects you can find me cooking <a 
               href="/Food" 
               className="text-violet-300 text-opacity-70" 
               target="_blank" 
@@ -72,28 +87,14 @@ function About(props) {
               className="text-violet-300 text-opacity-70" 
               target="_blank" 
               rel="noreferrer"
-            >loud music</a>.
+            >loud music</a>. Don't hesitate to <button 
+            className="text-violet-300 text-opacity-70" 
+            onClick={() => jumpTo('Contact')}
+          >reach out</button> if you'd like to connect!
           </p>
-
-          <p>
-            <br/>
-            Don't forget to check out my <button 
-              className="text-violet-300 text-opacity-70" 
-              onClick={() => jumpTo('Projects')}
-            >projects</button> below, and don't hesitate to <button 
-              className="text-violet-300 text-opacity-70" 
-              onClick={() => jumpTo('Contact')}
-            >reach out</button> if you'd like to connect!</p>
         </div>
 
-        {/* <TechnologyLister technologies={technologies} styling={`
-          text-left text-body-text font-roboto max-w-screen-lg
-          text-sm pl-10 -mt-4
-          md:text-md md:pl-12 md:-mt-4
-          lg:text-lg lg:pl-16 lg:-mt-8
-          xl:text-xl xl:pl-40 xl:-mt-12
-          2xl:text-2xl 2xl:pl-48 2xl:-mt-16
-        `}/> */}
+        
       </div>
     </div>
   )

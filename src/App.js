@@ -44,12 +44,12 @@ function App() {
           </div>
         } />
 
-        <Route path="/Art" element={
+        {/* <Route path="/Art" element={
           <div className="main-bg">
             <Header jumpTo={jumpTo}/>
             
           </div>
-        } />
+        } /> */}
 
       </Routes>
     </div>

@@ -77,7 +77,7 @@ function Projects() {
             title="Openprise Dashboard Application" 
             subtitle="Customer Data Trend Visualizer"
             description="As an Openprise intern, I led a team with two other interns in developing an internal dashboard application for visualizing customer data usage trends. I built a server-side backend that applies ETL strategies to transmit data from company databases to the dashboard through REST APIs, and designed the architecture of the frontend for dynamic data visualization."
-            technologies={["MySQL", "Elasticsearch", "Groovy", "Micronaut Framework", "TypeScript", "Node.js", "Vue.js", "Docker", "Nginx", "OAuth 2.0", "JWT", "Git"]} 
+            technologies={["MySQL", "Elasticsearch", "Groovy", "Micronaut", "TypeScript", "Node.js", "Vue.js", "Docker", "Gradle", "Nginx", "OAuth 2.0", "JWT", "Git"]} 
             githubLink=""
             liveLink="" 
             otherLink="https://www.openprisetech.com/"
