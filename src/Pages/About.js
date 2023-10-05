@@ -59,7 +59,7 @@ function About(props) {
             You can check out my <button 
                 className="text-violet-300 text-opacity-70" 
                 onClick={() => jumpTo('Projects')}
-              >projects</button> for more detail. Technologies I've worked with include:
+              >projects</button> for more detail. Technologies I've programmed in include:
               <div className="">
                 <TechnologyLister title="Languages" technologies={["Python", "JavaScript", "TypeScript", "C/C++", "C#", "Java", "Groovy"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Data Science and Machine Learning" technologies={["PyTorch", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook", "Google Colab"]} mainStyling={techTitleStyling}/>
