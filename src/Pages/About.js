@@ -73,7 +73,7 @@ function About(props) {
           <p>
             <br/>
             When I'm not working on projects you can find me cooking <a 
-              href="/Food" 
+              href="https://www.instagram.com/friedrightweiss/" 
               className="text-violet-300 text-opacity-70" 
               target="_blank" 
               rel="noreferrer"
@@ -83,7 +83,7 @@ function About(props) {
               target="_blank" 
               rel="noreferrer"
             >weird pictures</a>, and listening to <a 
-              href="/Music" 
+              href="https://open.spotify.com/playlist/5kZwVZWmeTWqjYI9J9DU8d?si=dfa075ec225641df" 
               className="text-violet-300 text-opacity-70" 
               target="_blank" 
               rel="noreferrer"

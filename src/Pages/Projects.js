@@ -55,7 +55,7 @@ function Projects() {
             technologies={["Python", "PyTorch", "OpenCV", "Jupyter Notebook", "Google Colab", "C#", "Unity Engine"]} 
             githubLink=""
             liveLink=""
-            otherLink="" /*"/ANNimator"*/
+            otherLink="/ANNimator"
             otherTitle="Read More"
             tags={["Data"]}
             techFilters={techFilters}
