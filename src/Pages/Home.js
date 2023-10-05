@@ -65,14 +65,14 @@ function Home() {
           dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br>') }}
           className={`
             text-left text-body-text font-roboto max-w-screen-lg
-            text-sm p-4 mb-5
-            md:text-md
-            lg:text-lg
-            xl:text-xl
-            2xl:text-2xl
+            text-sm p-4 -mb-1
+            md:text-md md:mb-0
+            lg:text-lg lg:mb-0
+            xl:text-xl xl:mb-0
+            2xl:text-2xl 2xl:mb-0
           `}
         />
-        <div>
+        <div className="pl-4">
           <ExternalLink
             length={24}
             color="#dfdfdf"
@@ -81,7 +81,7 @@ function Home() {
             link={links.resume.url}
           />
         </div>
-        <div>
+        <div className="pl-4">
           <ExternalLink
             length={24}
             color="#dfdfdf"
@@ -90,7 +90,7 @@ function Home() {
             link={links.github.url}
           />
         </div>
-        <div>
+        <div className="pl-4">
           <ExternalLink
             length={24}
             color="#dfdfdf"

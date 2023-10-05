@@ -10,8 +10,8 @@ function ExternalLink(props) {
       target="_blank"
       rel="noreferrer" 
       className={`
-        inline-flex text-left text-job-text font-jetbrains 
-        text-sm pl-4 pb-3 mr-2 hover:scale-105
+        inline-flex text-left text-job-text font-jetbrains border border-violet-300 border-opacity-70 rounded-md
+        text-sm p-2 my-1 hover:scale-105
     `}>
       <Icon color={color} iconPath={iconPath} sizeClass="w-4 h-4 mr-1"/>
       {name}

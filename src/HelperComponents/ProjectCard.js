@@ -81,17 +81,17 @@ function ProjectCard(props) {
         <div className="mt-auto w-fill">
           <footer className={"mt-4 text-center flex flex-wrap justify-center"}>
             {githubLink === "" ? null : (
-              <a className="mx-1 pl-1 pr-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={githubLink} target="_blank" rel="noreferrer">
+              <a className="bg-violet-400 hover:bg-black bg-opacity-30 hover:bg-opacity-80 mx-1 pl-1 pr-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={githubLink} target="_blank" rel="noreferrer">
                 <Icon color="#ffffff" iconPath={githubIcon} sizeClass="w-4 h-4 mx-1"/>Repo
               </a>
             )}
             {liveLink === "" ? null : (
-              <a className="mx-1 pl-1 pr-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={liveLink} target="_blank" rel="noreferrer">
+              <a className="bg-violet-400 hover:bg-black bg-opacity-30 hover:bg-opacity-80 mx-1 pl-1 pr-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={liveLink} target="_blank" rel="noreferrer">
                 <Icon color="#ffffff" iconPath={externalIcon} sizeClass="w-4 h-4 mx-1"/>Live
               </a>
             )}
             {otherLink === "" ? null : (
-              <a className="mx-1 px-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={otherLink} target="_blank" rel="noreferrer">{otherTitle}</a>
+              <a className="bg-violet-400 hover:bg-black bg-opacity-30 hover:bg-opacity-80 mx-1 px-2 py-1 text-xs flex font-jetbrains hover:scale-105 border rounded-md" href={otherLink} target="_blank" rel="noreferrer">{otherTitle}</a>
             )}
           </footer>
         </div>

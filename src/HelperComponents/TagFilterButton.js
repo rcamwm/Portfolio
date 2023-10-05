@@ -15,7 +15,7 @@ function TagFilterButton(props) {
 
   const inactiveClass = `
     rounded-md px-4 py-2 mx-0.5 border
-    bg-violet-400 bg-opacity-70 text-white
+    bg-violet-300 bg-opacity-50 text-white
     md:hover:bg-black md:hover:bg-opacity-80 md:hover:scale-105 md:hover:text-white md:mx-1
     lg:hover:bg-black lg:hover:bg-opacity-80 lg:hover:scale-105 lg:hover:text-white lg:mx-1
     xl:hover:bg-black xl:hover:bg-opacity-80 xl:hover:scale-105 xl:hover:text-white xl:mx-1

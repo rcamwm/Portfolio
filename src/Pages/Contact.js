@@ -44,21 +44,21 @@ function Contact() {
 
         <div className="justify-center flex text-job-text font-jetbrains">
           <a 
-            className="border p-2 mx-2 rounded-md hover:scale-105 flex" 
+            className="border bg-violet-300 bg-opacity-50 hover:bg-transparent p-2 mx-2 rounded-md hover:scale-105 flex" 
             href="mailto:rcamwm@gmail.com" 
           >
             <Icon color="#ffffff" iconPath={emailIcon} sizeClass="w-6 h-6 mr-2"/>Email
           </a>
 
           <a 
-            className="border p-2 mx-2 rounded-md hover:scale-105 flex" 
+            className="border bg-violet-300 bg-opacity-50 hover:bg-transparent p-2 mx-2 rounded-md hover:scale-105 flex" 
             href="sms:+14082098985"
           >
             <Icon color="#ffffff" iconPath={smsIcon} sizeClass="w-6 h-6 mr-2"/>SMS
           </a>
           
           <a 
-            className="border p-2 mx-2 rounded-md hover:scale-105 flex" 
+            className="border bg-violet-300 bg-opacity-50 hover:bg-transparent p-2 mx-2 rounded-md hover:scale-105 flex" 
             target="_blank"
             rel="noreferrer" 
             href="https://www.linkedin.com/in/rcamwm/"
@@ -67,7 +67,7 @@ function Contact() {
           </a>
         </div>
         <footer className="mt-auto text-center mb-0 text-white">
-          ©2023 Build and design by <a className="text-body-text hover:scale-105" href="Robert Cameron McGiffert resume.pdf">Robert Cameron McGiffert</a>.<br/>
+          ©2023 Build and design by <a className="text-violet-300 text-opacity-70" href="Robert Cameron McGiffert resume.pdf">Robert Cameron McGiffert</a>.<br/>
           Loosely designed in Figma.<br/>
           Built with React.js and Tailwind CSS.
         </footer>
