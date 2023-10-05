@@ -1,5 +1,5 @@
 import React, { useEffect }  from "react";
-import ExternalLink from "../../HelperComponents/ExternalLink";
+import ExternalLink from "../HelperComponents/ExternalLink";
 
 function Home() {
   useEffect(() => {
@@ -8,9 +8,7 @@ function Home() {
 
   const name = "Robert Cameron McGiffert"
   const title = "Software Engineer"
-  const description = `Passionate about building cool new things and solving complex problems.
-  My goal is to leave the world a better place than when I got here!
-  `
+  const description = `Passionate about data, building cool new things, and solving complex problems.`
 
   const links = {
     "github": {

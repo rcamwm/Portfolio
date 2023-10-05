@@ -1,5 +1,5 @@
 import React, { useEffect }  from "react";
-import ProjectReport from "../../HelperComponents/ProjectReport";
+import ProjectReport from "../HelperComponents/ProjectReport";
 
 function ANNimator() {
   useEffect(() => {

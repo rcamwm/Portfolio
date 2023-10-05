@@ -1,21 +1,5 @@
-import { useLocation } from 'react-router-dom';
-
-
-function Header() {
-  const currPath = useLocation().pathname;
-
-  const jumpTo = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (currPath === "/" && window.innerWidth >= 769) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-      });
-      window.history.pushState({}, "", `/#${sectionId}`); // Change URL without redirect
-    }
-    else {
-      window.location.href = `/#${sectionId}`; // Change URL with redirect
-    }
-  };
+function Header(props) {
+  const { jumpTo } = props;
   
   return (
     <header className="nav-header">

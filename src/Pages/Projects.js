@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ProjectCard from "../../HelperComponents/ProjectCard";
-import TagFilterButton from '../../HelperComponents/TagFilterButton';
-import TextBox from "../../HelperComponents/TextBox";
+import ProjectCard from "../HelperComponents/ProjectCard";
+import TagFilterButton from '../HelperComponents/TagFilterButton';
+import TextBox from "../HelperComponents/TextBox";
 
 function Projects() {  
   const [techFilters, setTechFilters] = useState("");
