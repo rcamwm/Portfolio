@@ -80,9 +80,9 @@ function About(props) {
                 onClick={() => jumpTo('Projects')}
               >projects</button> for more detail. Technologies I've programmed in include:
               <div className="">
-                <TechnologyLister title="Languages" technologies={["Python", "JavaScript", "TypeScript", "C/C++", "C#", "Java", "Groovy"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Languages" technologies={["Python", "JavaScript", "TypeScript", "C/C++", "C#", "Java", "Groovy", "HTML", "CSS"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Data Science and Machine Learning" technologies={["PyTorch", "scikit-learn", "pandas", "NumPy"]} mainStyling={techTitleStyling}/>
-                <TechnologyLister title="Web Development" technologies={["Node.js", "React.js", "Vue.js", "Express.js", "Socket.io", "Micronaut", "HTML", "CSS", "Tailwind CSS"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Web Development" technologies={["Node.js", "React.js", "Vue.js", "Express.js", "Socket.io", "Micronaut", "Tailwind CSS"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Databases" technologies={["MySQL", "MongoDB", "Elasticsearch"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Deployment Tools" technologies={["Docker", "Heroku", "Github Actions"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Security" technologies={["Nginx", "OAuth 2.0", "JSON Web Tokens"]} mainStyling={techTitleStyling}/>
