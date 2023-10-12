@@ -109,7 +109,7 @@ function About(props) {
               時間があるときに、{getTextLink(
                 "https://www.instagram.com/friedrightweiss/" , "ヴィーガン料理"
               )}を作ったり、<button 
-                className="text-violet-300" 
+                className={textLinkStyle} 
                 onClick={switchLang}
               >ENGLISH</button>を話したり、{getTextLink(
                 "https://open.spotify.com/playlist/5kZwVZWmeTWqjYI9J9DU8d?si=dfa075ec225641df" , "やばい音楽"
