@@ -52,9 +52,10 @@ function Projects() {
             title="ANNimator" 
             subtitle="Artificial Neural Network for Animation In-Between Frame Generation"
             description="I'm currently training a model to automate animation tasks by generating in-between images given two key frames. I'm employing curriculum learning with a siamese U-net architecture and a custom training dataset created in Unity. I'm also leveraging cloud based GPUs for more efficient training."
-            technologies={["Python", "PyTorch", "OpenCV", "Jupyter Notebook", "Google Colab", "C#", "Unity Engine"]} 
+            technologies={["Python", "PyTorch", "Jupyter Notebook", "Google Colab", "C#", "Unity Engine"]} 
             githubLink=""
             liveLink=""
+            driveLink="https://drive.google.com/drive/folders/1Oo0U6E6myY-_wuYsRGEyKpi93JmNZKcu"
             otherLink="/ANNimator"
             otherTitle="Read More"
             tags={["Data"]}
@@ -68,6 +69,7 @@ function Projects() {
             technologies={["Python", "scikit-learn", "pandas", "NumPy", "Jupyter Notebook", "Google Colab"]} 
             githubLink=""
             liveLink="https://colab.research.google.com/drive/1ZrAy71aptI1kfU9V41mpVqy2gAOtU-dJ?usp=sharing"
+            driveLink=""
             otherLink=""
             tags={["Data"]}
             techFilters={techFilters}
@@ -80,6 +82,7 @@ function Projects() {
             technologies={["MySQL", "Elasticsearch", "Groovy", "Micronaut", "TypeScript", "Node.js", "Vue.js", "Docker", "Gradle", "Nginx", "OAuth 2.0", "JWT", "Git"]} 
             githubLink=""
             liveLink="" 
+            driveLink=""
             otherLink="https://www.openprisetech.com/"
             otherTitle="Openprise Website"
             tags={["Data", "Web Apps"]}
@@ -93,6 +96,7 @@ function Projects() {
             technologies={["JavaScript", "Node.js", "React.js", "Express.js", "Socket.io", "MongoDB", "HTML", "CSS", "Git", "Heroku"]} 
             githubLink="https://github.com/CSC307-Group"
             liveLink="https://pixlerr-io.herokuapp.com/" 
+            driveLink=""
             otherLink=""
             tags={["Web Apps"]}
             techFilters={techFilters}
@@ -105,6 +109,7 @@ function Projects() {
             technologies={["C/C++", "GNU Debugger", "Makefile", "Unix System Commands", "Xubuntu Virtual Machine"]} 
             githubLink="https://github.com/rcamwm/SIMPI"
             liveLink="" 
+            driveLink=""
             otherLink=""
             tags={["Misc"]}
             techFilters={techFilters}
@@ -117,6 +122,7 @@ function Projects() {
             technologies={["C#", "Unity Engine", "Itch.io", "Aesprite"]} 
             githubLink="https://github.com/rcamwm/final-project-378"
             liveLink="https://rcamwm.itch.io/reminisce" 
+            driveLink=""
             otherLink=""
             tags={["Games"]}
             techFilters={techFilters}
@@ -129,6 +135,7 @@ function Projects() {
             technologies={["JavaScript", "React.js", "Tailwind CSS", "HTML", "Heroku", "Figma"]} 
             githubLink="https://github.com/rcamwm/Portfolio"
             liveLink="/"
+            driveLink=""
             otherLink=""
             tags={["Web Apps"]}
             techFilters={techFilters}
