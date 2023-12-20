@@ -56,8 +56,8 @@ function Projects() {
             githubLink=""
             liveLink=""
             driveLink="https://drive.google.com/drive/folders/1Oo0U6E6myY-_wuYsRGEyKpi93JmNZKcu"
-            otherLink="/ANNimator"
-            otherTitle="Read More"
+            otherLink=""
+            otherTitle=""
             tags={["Data"]}
             techFilters={techFilters}
             tagFilters={tagFilters}
