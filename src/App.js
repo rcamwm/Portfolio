@@ -37,6 +37,10 @@ function App() {
           </div>
         } />
 
+        <Route path="/ETH_Price_Prediction">
+          <Redirect to="https://colab.research.google.com/drive/1ZrAy71aptI1kfU9V41mpVqy2gAOtU-dJ?usp=sharing"/>
+        </Route>
+
         <Route path="/ANNimator" element={
           <div className="main-bg">
             <Header jumpTo={jumpTo}/>
