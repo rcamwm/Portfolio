@@ -45,7 +45,7 @@ function App() {
         } />
 
         <Route
-          path="/ETH_Price_Prediction"
+          path="/ETH-Price-Prediction"
           element={<EthRedirectComponent />}
         />
 
