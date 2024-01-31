@@ -49,7 +49,21 @@ function Projects() {
 
         <div className="flex flex-wrap justify-center">
           <ProjectCard 
-            title="ANNimator" 
+            title="VoiceVerif AI" 
+            subtitle="Speaker Verification Neural Network and Discriminator"
+            description="I'm currently developing a stagewise speaker verification model. The frontend extracts x-vectors with a Factorized Time-Delay Neural Network architecture. The model is trained with custom AM Softmax Loss and Center Loss functions for enhanced speaker discrimination. The backend compares x-vectors with a custom Probabilistic Linear Discriminant Analysis model."
+            technologies={["Python", "TensorFlow", "Keras", "scikit-learn", "pandas", "NumPy", "SciPy", "Jupyter Notebook", "Google Colab"]} 
+            githubLink=""
+            liveLink="https://colab.research.google.com/drive/1Sx-YQli5QZg51tPHz_rD0FMAKPsWlv5f?usp=sharing"
+            driveLink=""
+            otherLink=""
+            otherTitle=""
+            tags={["Data"]}
+            techFilters={techFilters}
+            tagFilters={tagFilters}
+          />
+          <ProjectCard 
+            title="ANNimator " 
             subtitle="Artificial Neural Network for Animation In-Between Frame Generation"
             description="I'm currently training a model to automate animation tasks by generating in-between images given two key frames. I'm employing curriculum learning with a siamese U-net architecture and a custom training dataset created in Unity. I'm also leveraging cloud based GPUs for more efficient training."
             technologies={["Python", "PyTorch", "Jupyter Notebook", "Google Colab", "C#", "Unity Engine"]} 

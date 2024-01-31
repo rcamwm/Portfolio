@@ -7,6 +7,13 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import ANNimator from "./Pages/ANNimator";
 
+const VvaiRedirectComponent = () => {
+  useEffect(() => {
+    window.location.href = 'https://colab.research.google.com/drive/1Sx-YQli5QZg51tPHz_rD0FMAKPsWlv5f?usp=sharing';
+  }, []);
+  return null;
+};
+
 const EthRedirectComponent = () => {
   useEffect(() => {
     window.location.href = 'https://colab.research.google.com/drive/1ZrAy71aptI1kfU9V41mpVqy2gAOtU-dJ?usp=sharing';
@@ -43,6 +50,11 @@ function App() {
             <div id="Contact"><Contact/></div>
           </div>
         } />
+
+        <Route
+          path="/VoiceVerifAI"
+          element={<VvaiRedirectComponent />}
+        />
 
         <Route
           path="/ETH-Price-Prediction"

@@ -81,7 +81,7 @@ function About(props) {
               >projects</button> for more detail. Technologies I've programmed in include:
               <div className="">
                 <TechnologyLister title="Languages" technologies={["Python", "JavaScript", "TypeScript", "C/C++", "C#", "Java", "Groovy", "HTML", "CSS"]} mainStyling={techTitleStyling}/>
-                <TechnologyLister title="Data Science and Machine Learning" technologies={["PyTorch", "scikit-learn", "pandas", "NumPy"]} mainStyling={techTitleStyling}/>
+                <TechnologyLister title="Data Science and Machine Learning" technologies={["PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "SciPy", "pandas"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Web Development" technologies={["Node.js", "React.js", "Vue.js", "Express.js", "Socket.io", "Micronaut", "Tailwind CSS"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Databases" technologies={["MySQL", "MongoDB", "Elasticsearch"]} mainStyling={techTitleStyling}/>
                 <TechnologyLister title="Deployment Tools" technologies={["Docker", "Heroku", "Github Actions"]} mainStyling={techTitleStyling}/>
