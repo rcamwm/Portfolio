@@ -51,7 +51,7 @@ function Projects() {
           <ProjectCard 
             title="VoiceVerif AI" 
             subtitle="Speaker Verification Neural Network and Discriminator"
-            description="I'm currently developing a stagewise speaker verification model. The frontend extracts x-vectors with a Factorized Time-Delay Neural Network architecture. The model is trained with custom AM Softmax Loss and Center Loss functions for enhanced speaker discrimination. The backend compares x-vectors with a custom Probabilistic Linear Discriminant Analysis model."
+            description="I'm currently developing a stagewise speaker verification model. The frontend extracts x-vectors with a Factorized Time-Delay Neural Network architecture. The model is trained with custom Additive Margin Softmax Loss and Center Loss functions for enhanced speaker discrimination. The backend compares x-vectors with a custom Probabilistic Linear Discriminant Analysis model."
             technologies={["Python", "TensorFlow", "Keras", "scikit-learn", "pandas", "NumPy", "SciPy", "Jupyter Notebook", "Google Colab"]} 
             githubLink=""
             liveLink="https://colab.research.google.com/drive/1Sx-YQli5QZg51tPHz_rD0FMAKPsWlv5f?usp=sharing"
