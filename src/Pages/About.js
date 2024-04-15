@@ -59,8 +59,8 @@ function About(props) {
           <p>
             Hi, I'm Robert_Cameron! 
             That's a single first name with a space and no hyphen, but you can just call me Cameron. 
-            I recently graduated from Cal Poly San Luis Obispo with a bachelor's in computer science, 
-            and I'll soon be starting a new role as a software engineer in Baltimore, Maryland. 
+            I recently graduated from Cal Poly San Luis Obispo with a bachelor's in computer science 
+            and I'm currently working as a software engineer. 
           </p>
 
           <p>
