@@ -63,20 +63,6 @@ function Projects() {
             tagFilters={tagFilters}
           />
           <ProjectCard 
-            title="ANNimator " 
-            subtitle="Artificial Neural Network for Animation In-Between Frame Generation"
-            description="I'm currently training a model to automate animation tasks by generating in-between images given two key frames. I'm employing curriculum learning with a siamese U-net architecture and a custom training dataset created in Unity. I'm also leveraging cloud based GPUs for more efficient training."
-            technologies={["Python", "PyTorch", "Jupyter Notebook", "Google Colab", "C#", "Unity Engine"]} 
-            githubLink=""
-            liveLink=""
-            driveLink="https://drive.google.com/drive/folders/1Oo0U6E6myY-_wuYsRGEyKpi93JmNZKcu"
-            otherLink=""
-            otherTitle=""
-            tags={["Data"]}
-            techFilters={techFilters}
-            tagFilters={tagFilters}
-          />
-          <ProjectCard 
             title="Ethereum Predictor" 
             subtitle="Machine Learning Model to Predict ETH Prices"
             description="I trained a polynomial regression model to forecast future NASDAQ and S&P500 prices given their historic trends. I also trained a stacked linear regression / k-nearest neighbors model to predict Ethereum's value given those two stock prices. I then predicted Ethereum's future pricing given the initial forecasted NASDAQ and S&P500 values."

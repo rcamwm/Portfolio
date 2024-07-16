@@ -57,19 +57,10 @@ function About(props) {
           `}
         >
           <p>
-            Hi, I'm Robert_Cameron! 
-            That's a single first name with a space and no hyphen, but you can just call me Cameron. 
-            I recently graduated from Cal Poly San Luis Obispo with a bachelor's in computer science 
-            and I'm currently working as a software engineer. 
-          </p>
-
-          <p>
-            <br/>
-            I never expected to love this field as much as I do. 
-            What started as an independent project at an old unrelated job turned into me apprehensively taking an introductory Python course.
-            Learning Python was somehow the first time school had ever been enjoyable.
-            I ended up taking as many computer science classes as I could, 
-            going overboard on every assignment just for the fun of it, trying to write the best programs possible.
+            Hi, I'm Robert Cameron. 
+            That's a single first name with a space and no hyphen, but just call me Cameron. 
+            I got my bachelor's in computer science from Cal Poly San Luis Obispo
+            and I'm currently working as a software engineer for the US federal government. 
           </p>
 
           <p>
